@@ -36,7 +36,7 @@ RDLogger.DisableLog("rdApp.*")
 PAD_ID = 0       # 填充标记ID，用于序列长度对齐
 MASK_ID = 1      # 掩码标记ID，用于掩码语言模型训练
 
-
+#
 def z_to_id(z: int) -> int:
     """
     将原子序数映射到词汇表ID
@@ -304,3 +304,4 @@ def batch_collate(batch: List[Dict[str, Any]]) -> Dict[str, torch.Tensor]:
 
     valid_n = torch.tensor(Ns, dtype=torch.long)
     return {"atom_ids": atom_ids, "coords": coords, "pad_mask": pad_mask, "valid_n": valid_n}
+
