@@ -8,7 +8,7 @@ from dataset_sdf import PAD_ID
 from utils_geometry import kabsch_rotate
 from chemical_pretrain.constants import *
 from pretrain_model import MoleculePretrainModel, valid_pair_from_pad_mask
-
+#
 
 class CrossAttentionDecoderLayer(nn.Module):
     """带 Cross-Attention 的解码器层"""
