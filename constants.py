@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # chemical_pretrain/constants.py
 from pathlib import Path
-
+#
 # ===== 必须与 Stage 1 run_train.py 完全一致 =====
 # 词表：0=PAD, 1=MASK, 2~119=原子
 VOCAB_SIZE = 120
@@ -18,4 +18,5 @@ DROPOUT    = 0.1
 
 # 路径配置
 PAD_ID = 0
+
 MASK_ID = 1
